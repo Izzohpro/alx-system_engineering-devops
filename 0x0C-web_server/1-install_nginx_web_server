@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-# Installs nginx web server on a new ubuntu server
+# This script installs a nginx web server
+
 sudo apt update
-sudo apt install -y nginx
-sudo ufw allow 'Nginx HTTP'
-# echo "Hello World!" | sudo tee /var/www/html/index.html
-# OR
-echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
+sudo apt install nginx -y
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw --force enable
+sudo ufw status
+systemctl status nginx
+echo 'Hello World' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
 sudo service nginx restart
