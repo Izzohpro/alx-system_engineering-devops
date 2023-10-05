@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2086
+# A script that displays domain dns informations for a domain
 # display information about subdomains
 
 display_info ()
