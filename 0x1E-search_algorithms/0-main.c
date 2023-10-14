@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include <stdio.h>
+=======
+nclude <stdio.h>
+>>>>>>> 94d9b761dff87b7171d4c765c0adfdd98e387063
 #include <stdlib.h>
 #include "search_algos.h"
 
